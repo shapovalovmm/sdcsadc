@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = 'ru'>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "viewport" content="width=device-width">
+		<title> Главная | Резюме </title>
+		<link rel="stylesheet" href="site_css.css" id = "theme">
+		<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+	</head>
+	<body class ="body_main">
+		<div class = "container">
+			<main class= "transition-fade" id="swup">
+				<nav class = "menu">
+					<div class = "menu-ul">
+						<a href= "/parallax.html">Обо мне</a>
+						<button id="switchMode">Смена темы</button>
+					</div>	
+				</nav>
+				<div class = "info">
+					<img src="ma.jpg" class="maxik">
+					<div class="info-text">
+						<div class="info1">
+							<h1>Maxim Shapovalov</h1>
+							<p>Учусь в 11 классе.</p>
+							<p>Альфач,плейбой,филантроп</p>
+						</div>
+						<div class = "social">
+							<h3>Мои социальные сети</h3>
+							<a href = "https://instagram.com/shapovalov_mm" target="_blank" class = "soc">Instagram</a>
+							|
+							<a href = "https://t.me/zerkalosamorazvitiya" target="_blank" class= 'soc'>Telegram</a>
+						</div>
+					</div>
+				</div>
+				<div class = "card bg-red">
+					<h2>Мои хобби</h2>
+					<ul class = "list">
+						<li>Программирование</li>
+						<li>Шахматы</li>
+						<li>Воркаут</li>
+						<li>Психология</li>
+					</ul>
+				</div>
+				<div class = "card bg-green">
+					<h2>Шарю за:</h2>
+					<ul class = "list">
+						<li>Python</li>
+						<li>HTML и CSS</li>
+						<li>Aiogram</li>
+					</ul>
+				</div>
+				<form class="contact">
+					<h2>Заказать у меня Сайт/Телеграм бота</h2>
+					<div class="row">
+						<div class = "form-group">
+							<label for="name"> Ваше имя:</label>
+							<input type="text" id="name" placeholder="ФИО">
+						</div>
+						<div class = "form-group">
+							<label for="email"> Ваша почта:</label>
+							<input type="email" id="email" placeholder="example@gmail.com">
+						</div>
+					</div>
+					<div class = "form-group">
+						<label for="message"> Ваше сообщение:</label>
+						<textarea id="message"> </textarea>
+					</div>
+					<input class = "btn" type="submit">
+				</form>
+			</main>
+		</div>
+		<script src = "theme.js"></script>
+		<script>const swup = new Swup();</script>
+	</body>
+</html>
